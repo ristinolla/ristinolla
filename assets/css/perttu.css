@@ -1,0 +1,14 @@
+/**
+Main less file
+**/
+/**
+Variables
+**/
+body {
+  background: black;
+}
+body h1 {
+  color: white;
+  font: serif;
+  font-size: 220px;
+}
