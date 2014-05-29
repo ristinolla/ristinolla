@@ -11,13 +11,35 @@ module.exports = function(grunt) {
         src: 'src/<%= pkg.name %>.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
-    }
+    },
+
+    jade: {
+      compile: {
+        options: {
+          pretty: true
+        },
+        data: {
+          pluginVersion: '<%= pkg.version %>'
+        },
+        files: {
+          'index.html' : 'src/index.jade' 
+        }
+      }
+    },
+
+    watch: {
+      jade: {
+        files: 'src/**/*.jade',
+        tasks: ['jade:compile']
+      }
+    }   
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
-
+  grunt.registerTask('default', ['uglify, jade']);
 };
