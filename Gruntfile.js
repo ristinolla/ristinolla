@@ -16,7 +16,8 @@ module.exports = function(grunt) {
       },
       libs: {
         src: ['bower_components/jquery/dist/jquery.js', 
-              'bower_components/retina.js/dist/retina.js'],
+              'bower_components/retina.js/dist/retina.js',
+              'bower_components/bootstrap/dist/bootstrap.js'],
         dest: 'assets/js/<%= pkg.slug %>.libs.js'
       }
     },

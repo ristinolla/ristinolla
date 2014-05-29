@@ -31,7 +31,6 @@ body {
   color: white;
   font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
   font-size: 1.2em;
-  font-weight: 700;
 }
 @media (min-width: 740px) {
   body {
@@ -50,9 +49,12 @@ h1 {
   padding: 0;
 }
 p.lead {
+  font-weight: 700;
   font-size: 1em;
 }
 p {
+  font-weight: 400;
+  font-size: 0.5em;
   margin-top: 0;
 }
 main {
@@ -70,7 +72,18 @@ a {
 a:hover {
   text-decoration: underline;
 }
-a .fa {
-  margin-left: 0.3em;
+footer a {
+  display: inline-block;
   color: white;
+  font-size: 0.8em;
+}
+footer a:first-of-type a {
+  margin-right: 0;
+}
+footer li {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+footer li:first-of-type {
+  margin-left: 0;
 }
