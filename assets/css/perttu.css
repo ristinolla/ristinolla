@@ -4,11 +4,73 @@ Main less file
 /**
 Variables
 **/
-body {
-  background: black;
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
-body h1 {
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #555;
+  background-image: url('../img/nz_1000h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: white;
-  font: serif;
-  font-size: 220px;
+  font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+@media (min-width: 740px) {
+  body {
+    background-image: url('../img/nz_2000h.jpg');
+  }
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 2.5em;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+p.lead {
+  font-size: 1em;
+}
+p {
+  margin-top: 0;
+}
+main {
+  height: 10em;
+  width: 100%;
+  text-align: center;
+  margin-top: -5em;
+  top: 50%;
+  position: absolute;
+}
+a {
+  color: #fcff00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a .fa {
+  margin-left: 0.3em;
+  color: white;
 }

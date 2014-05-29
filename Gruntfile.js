@@ -21,6 +21,11 @@ module.exports = function(grunt) {
       }
     },
 
+    jshint: {
+      beforeconcat: ['src/js/main.js'],
+      afterconcat: ['assets/js/<%= pkg.slug %>.js']
+    },
+
 
     uglify: {
       options: {
@@ -40,6 +45,18 @@ module.exports = function(grunt) {
       development: {
         files: {
           "assets/css/<%= pkg.slug %>.css": "src/less/main.less",
+        }
+      },
+      production: {
+        options: {
+          paths: ["assets/css"],
+          cleancss: true,
+          modifyVars: {
+            imgPath: '"http://mycdn.com/path/to/images"',
+          }
+        },
+        files: {
+          "build/css/<%= pkg.slug %>.css": "src/less/main.less"
         }
       }
     },
@@ -82,7 +99,7 @@ module.exports = function(grunt) {
       styles: {
         // Which files to watch (all .less files recursively in the less directory)
         files: ['src/less/**/*.less'],
-        tasks: ['less'],
+        tasks: ['less:development'],
         options: {
           nospawn: true
         }
@@ -105,5 +122,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['uglify', 'jade', 'less']);
-  grunt.registerTask('build', ['concat', 'less', 'jade', 'cssmin', 'uglify']);
+  grunt.registerTask('build', [ 'concat','less:production', 'jade', 'cssmin', 'uglify']);
 };
