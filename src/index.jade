@@ -4,39 +4,57 @@ html(lang="en")
 
   body
 
-    main
-      header 
-          h1 Hi, my name is Perttu. 
-          p.lead
-            | I am a front-end web developer
-            | <br> who loves to take photos.
-      section
-          p.
-            While I'm creating this site, feel free to  <a href="mailto:hello@pertturistimella.com"> say hi</a> 
-            or <br> check out <a href="http://github.com/ristinolla/">Github</a> and <a href="http://souvvi.com">Souvvi.com</a>!
-      footer
-        ul.list-inline
-          li
-            a(href="http://github.com/ristinolla/", target="_blank")
-              i.fa.fa-github.fa-2x
-              span.text-hide Perttu's Github repositories
-  
-          li
-            a(href="http://fi.linkedin.com/in/pertturistimella/", target="_blank")
-              i.fa.fa-linkedin-square.fa-2x
-              span.text-hide Perttu's LinkedIn profile
-  
-          li
-            a(href="http://twitter.com/ristinolla", target="_blank")
-              i.fa.fa-twitter.fa-2x
-              span.text-hide Perttu's Twitter
-  
-          li
-            a(href="http://blog.pertturistimella.com", target="_blank")
-              i.fa.fa-tumblr.fa-2x
-              span.text-hide Perttu's Blog
-  
-          li
-            a(href="https://www.flickr.com/photos/limpek/", target="_blank")
-              i.fa.fa-flickr.fa-2x
-              span.text-hide Perttu's Photos  
+    // JUMBOTRON
+    section.jumbotron.windowHeight
+      div.wrapper
+        header 
+            h1 Hi, my name is Perttu. 
+            p.lead
+              | I'm a designer &amp; front-end developer
+              | <br> who loves to take photos.
+        div.content
+            p.
+              While I'm creating this site, feel free to  <a href="mailto:hello@pertturistimella.com"> say hi</a> 
+              or <br> check out <a href="http://github.com/ristinolla/">Github</a> and <a href="http://souvvi.com">Souvvi.com</a>!
+        div.social
+          ul.list-inline
+            li
+              a(href="http://github.com/ristinolla/", target="_blank")
+                i.fa.fa-github.fa-2x
+                span.text-hide Perttu's Github repositories
+    
+            li
+              a(href="http://fi.linkedin.com/in/pertturistimella/", target="_blank")
+                i.fa.fa-linkedin-square.fa-2x
+                span.text-hide Perttu's LinkedIn profile
+    
+            li
+              a(href="http://twitter.com/ristinolla", target="_blank")
+                i.fa.fa-twitter.fa-2x
+                span.text-hide Perttu's Twitter
+    
+            li
+              a(href="http://blog.pertturistimella.com", target="_blank")
+                i.fa.fa-tumblr.fa-2x
+                span.text-hide Perttu's Blog
+    
+            li
+              a(href="https://www.flickr.com/photos/limpek/", target="_blank")
+                i.fa.fa-flickr.fa-2x
+                span.text-hide Perttu's Photos
+
+    // MAIN CONTENT
+    section.windowHeight
+      div.half
+        h2 About me
+        p Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.
+        p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis.
+      div.half
+        img(src="assets/img/profile.jpg", alt="profilepic")   
+
+    include includes/footer
+
+
+
+
+

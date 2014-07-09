@@ -66,6 +66,7 @@ module.exports = function(grunt) {
       combine: {
         files: {
           'assets/css/<%= pkg.slug %>.libs.css': [
+                      'bower_components/bootstrap/dist/css/bootstrap.css',
                       'bower_components/normalize.css/normalize.css',
                       'assets/css/main.css' ]
         }
