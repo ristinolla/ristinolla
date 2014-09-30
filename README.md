@@ -1,4 +1,8 @@
 ristinolla
 ==========
 
-My little github page
+My little Github page
+
+
+grunt watch
+grunt build

@@ -11,8 +11,9 @@ Variables
   background-color: transparent;
   border: 0;
 }
-* {
-  box-sizing: border-box;
+::selection {
+  background: #fcff00;
+  color: black;
 }
 html {
   height: 100%;
