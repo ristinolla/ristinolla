@@ -2,15 +2,15 @@
 Main less file
 **/
 
-@import "/../../bower_components/retina.js/src/retina.less";
-@import "variables";
+//@import '../bower_components/normalize.css/normalize.css';
+@import 'variables';
 
 .text-hide {
   //.text-hide();
 }
 
 ::selection {
-  background: @brand;
+  background: $brand;
   color: black;
 }
 
@@ -41,6 +41,7 @@ body {
   }
 
 }
+
 h1 {
   font-weight: 700;
   font-size: 1em;
@@ -70,7 +71,7 @@ main {
 }
 
 a {
-  color: @yellow;
+  color: $yellow;
   text-decoration: none;
   &:hover {
     text-decoration: underline;

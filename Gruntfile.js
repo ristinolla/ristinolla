@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
+
     concat: {
       options: {
         // define a string to put between each file in the concatenated output
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         dest: 'assets/js/<%= pkg.slug %>.js'
       },
       libs: {
-        src: ['bower_components/jquery/dist/jquery.js', 
+        src: ['bower_components/jquery/dist/jquery.js',
               'bower_components/retina.js/dist/retina.js',
               'bower_components/bootstrap/dist/bootstrap.js'],
         dest: 'assets/js/<%= pkg.slug %>.libs.js'
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      beforeconcat: ['src/js/main.js'],
+      beforeconcat: ['src/js/<%= pkg.slug %>.js'],
       afterconcat: ['assets/js/<%= pkg.slug %>.js']
     },
 
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "build/css/<%= pkg.slug %>.css": "src/less/main.less"
+          "assets/css/<%= pkg.slug %>.css": "src/less/main.less"
         }
       }
     },
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
           pluginVersion: '<%= pkg.version %>'
         },
         files: {
-          'index.html' : 'src/index.jade' 
+          'index.html' : 'src/index.jade'
         }
       }
     },
@@ -110,7 +110,7 @@ module.exports = function(grunt) {
         tasks: ['jade:compile']
       }
 
-    }   
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
