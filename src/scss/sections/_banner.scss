@@ -1,0 +1,32 @@
+.banner {
+  margin: 0; padding: 0;
+  width: 100%;
+  background: #555;
+
+  background-image: url('../img/lumisade_1000h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width : 740px )  {
+    background-image: url('../img/nz_colorfull.jpg');
+  }
+
+
+  color: white;
+  font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
+
+
+  div {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18%;
+  }
+
+  p.lead {
+    font-weight: $bold;
+    font-size: 2.0em;
+  }
+}
