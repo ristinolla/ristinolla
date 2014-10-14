@@ -15,7 +15,10 @@ $z-index-9:   900;
 $z-index-10: 1000;
 
 
-// Z-Index Applications
+// Z-Index
 // --------------------------------------------------
 
-$z-index-1--nav:                 $z-index-7;
+$z-index-1--hero:         $z-index-1;
+$z-index-2--content:      $z-index-2;
+
+$z-index-7--nav:                 $z-index-7;

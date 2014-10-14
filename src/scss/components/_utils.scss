@@ -42,3 +42,16 @@
 
 
 .text-center { text-align: center; }
+
+
+.list-divided {
+  li:after {
+    content: '\b7';
+    color:  $light-on-light;
+    padding-left: 10px;
+  }
+  li:last-of-type:after {
+    content: '';
+    padding-left: 0;
+  }
+}

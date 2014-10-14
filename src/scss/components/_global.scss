@@ -2,9 +2,15 @@
 .block {
   padding-top: 60px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .dark {
   background: $darkest-gray;
   color: rgb(255,255,255);
+}
+
+.light {
+  background: rgb(255,255,255);
+  color: $dark-gray;
 }

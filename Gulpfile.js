@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
-    //imagemin = require('gulp-imagemin'),
+    imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -54,11 +54,24 @@ gulp.task('jade', function() {
 });
 
 
+// Img
+gulp.task('images',['clean-images'], function() {
+  return gulp.src('src/img/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('assets/img'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
+
+
 // Clean
 gulp.task('clean', function(cb) {
     del(['assets/css', 'assets/js'], cb)
 });
 
+gulp.task('clean-images', function(cb) {
+    del(['assets/img'], cb)
+});
 
 // Default task
 gulp.task('default', ['clean'], function() {

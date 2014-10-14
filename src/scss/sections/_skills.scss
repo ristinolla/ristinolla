@@ -25,9 +25,9 @@
     border-radius: 100%;
     z-index: 1100;
   }
-  &.code:before { background-color: $yellow; }
-  &.design:before { background-color: $orange; }
-  &.photo:before { background-color: $blue; }
+  .code &:before { background-color: $yellow; }
+  .design &:before { background-color: $orange; }
+  .photo &:before { background-color: $blue; }
 
   &:after {
     content: '';
@@ -52,8 +52,7 @@
 }
 
 .skill-text {
-  padding-left: 5px;
-  padding-right: 5px;
+
   a { font-weight: $bold; }
 }
 

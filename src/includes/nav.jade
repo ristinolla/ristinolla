@@ -1,7 +1,7 @@
 include variables
 
 nav.navigation.nav-closed
-  a.logo(href="/") RistinollaCreative 
+  a.logo(href="/") RistinollaCreative
   button.button-clear.toggle-navigation.collapsed(type='button', data-target='#navigation')
     span.sr-only Toggle navigation
     .hamburger
@@ -17,7 +17,13 @@ nav.navigation.nav-closed
         a(href="#") Contact
       li
         a(href="#") Blog
-    ul.list-inline
-      li A
-      li B
-      li C
+    ul.list-inline.icon-list
+      li
+        a(href="http://github.com/ristinolla/").icon.github
+          include ../../assets/img/svg/github.svg
+      li
+        a(href="http://fi.linkedin.com/in/pertturistimella/").icon.linkedin
+          include ../../assets/img/svg/linkedin.svg
+      li
+        a(href="http://twitter.com/ristinolla").icon.twitter
+          include ../../assets/img/svg/twitter.svg    

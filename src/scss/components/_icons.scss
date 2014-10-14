@@ -1,0 +1,14 @@
+.icon-list a {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.857em;
+}
+
+.icon.github:hover path { fill: $github-color    }
+.icon.twitter:hover path { fill: $twitter-color   }
+.icon.linkedin:hover path { fill: $linkedin-color  }
+.icon.instagram:hover path { fill: $instagram-color }
+.icon.flickr:hover path { fill: $flickr-color    }
+.icon.tumblr:hover path { fill: $tumblr-color    }
+.icon.spotify:hover path { fill: $spotify-color   }

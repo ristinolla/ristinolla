@@ -47,8 +47,10 @@ main {
 a {
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: $brand;
   }
+
 }
 
 
@@ -76,9 +78,30 @@ a:visited {
 
 
 //content
+.content {
+  z-index: $z-index-2--content;
+}
 .content p {
   line-height: 1.4em;
   margin-bottom: 20px;
   text-align: justify;
   text-align: justify-content;
+}
+.content a {
+  font-weight: $bold;
+  .light &:visited {
+    color: $text-color;
+  }
+  .dark &:visited {
+    color: $text-on-dark;
+  }
+}
+
+
+.caption {
+  float: right;
+  color: $light-on-light;
+  font-size: 0.857em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

@@ -3,7 +3,6 @@ Variables
 **/
 
 
-
   $yellow:        rgb(248, 196, 0);
   $orange:        rgb(237, 88, 37);
   $blue:          rgb(52, 187, 202);
@@ -14,7 +13,7 @@ Variables
 
   $brand: $yellow;
 
-  
+
 
   $nav-color: rgb(255,255,255);
   $nav-background:   $yellow;
@@ -26,6 +25,18 @@ Variables
   $narrow: 200;
   $bold: 800;
 
-
+  $text-color:      $dark-gray;
+  $text-on-dark:    rgb(255,255,255);
   $dark-on-dark:    $dark-gray;
   $light-on-light:  $light-gray;
+
+
+
+  // Social media colors
+  $github-color:      rgb(65, 131, 196);
+  $twitter-color:     rgb(0, 172, 237);
+  $linkedin-color:    rgb(0, 123, 182);
+  $instagram-color:   rgb(81, 127, 164);
+  $flickr-color:      rgb(255, 0, 132);
+  $tumblr-color:      rgb(50, 80, 109);
+  $spotify-color:     rgb(129,183,26);

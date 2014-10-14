@@ -1791,14 +1791,30 @@ Variables
   text-align: center;
 }
 
+.list-divided li:after {
+  content: '\b7';
+  color: #c6cccd;
+  padding-left: 10px;
+}
+.list-divided li:last-of-type:after {
+  content: '';
+  padding-left: 0;
+}
+
 .block {
   padding-top: 60px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .dark {
   background: #212324;
   color: white;
+}
+
+.light {
+  background: white;
+  color: #45484a;
 }
 
 ::-moz-selection {
@@ -1849,7 +1865,8 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #f8c400;
 }
 
 .section-header {
@@ -1888,11 +1905,68 @@ a:visited {
   color: #34bbca;
 }
 
+.content {
+  z-index: 200;
+}
+
 .content p {
   line-height: 1.4em;
   margin-bottom: 20px;
   text-align: justify;
   text-align: justify-content;
+}
+
+.content a {
+  font-weight: 800;
+}
+.light .content a:visited {
+  color: #45484a;
+}
+.dark .content a:visited {
+  color: white;
+}
+
+.caption {
+  float: right;
+  color: #c6cccd;
+  font-size: 0.857em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.icon-list a {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.857em;
+}
+
+.icon.github:hover path {
+  fill: #4183c4;
+}
+
+.icon.twitter:hover path {
+  fill: #00aced;
+}
+
+.icon.linkedin:hover path {
+  fill: #007bb6;
+}
+
+.icon.instagram:hover path {
+  fill: #517fa4;
+}
+
+.icon.flickr:hover path {
+  fill: #ff0084;
+}
+
+.icon.tumblr:hover path {
+  fill: #32506d;
+}
+
+.icon.spotify:hover path {
+  fill: #81b71a;
 }
 
 .button-clear {
@@ -2029,6 +2103,10 @@ a:visited {
           transform: translate(0, -127%);
 }
 
+.big-nav .icon {
+  width: 2em;
+}
+
 .banner {
   margin: 0;
   padding: 0;
@@ -2082,13 +2160,13 @@ a:visited {
   border-radius: 100%;
   z-index: 1100;
 }
-.skill-header.code:before {
+.code .skill-header:before {
   background-color: #f8c400;
 }
-.skill-header.design:before {
+.design .skill-header:before {
   background-color: #ed5825;
 }
-.skill-header.photo:before {
+.photo .skill-header:before {
   background-color: #34bbca;
 }
 .skill-header:after {
@@ -2111,10 +2189,6 @@ a:visited {
   margin-right: -7px;
 }
 
-.skill-text {
-  padding-left: 5px;
-  padding-right: 5px;
-}
 .skill-text a {
   font-weight: 800;
 }
@@ -2126,6 +2200,13 @@ a:visited {
 
 .skill-text .desc {
   font-weight: 800;
+}
+
+.carousel .desktop-img {
+  width: 1030px;
+  margin-left: -160px;
+  z-index: 100;
+  max-width: initial;
 }
 
 footer p {
