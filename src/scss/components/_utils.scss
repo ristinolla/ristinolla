@@ -21,6 +21,13 @@
   }
 }
 
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
 
 // List options
 
@@ -45,6 +52,7 @@
 
 
 .list-divided {
+  font-weight: $bold;
   li:after {
     content: '\b7';
     color:  $light-on-light;

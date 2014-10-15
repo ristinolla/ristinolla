@@ -2,7 +2,6 @@
 Variables
 **/
 
-
   $yellow:        rgb(248, 196, 0);
   $orange:        rgb(237, 88, 37);
   $blue:          rgb(52, 187, 202);
@@ -15,7 +14,7 @@ Variables
 
 
 
-  $nav-color: rgb(255,255,255);
+  $nav-color: $yellow;
   $nav-background:   $yellow;
 
   $dark-bg: $darkest-gray;
@@ -40,3 +39,9 @@ Variables
   $flickr-color:      rgb(255, 0, 132);
   $tumblr-color:      rgb(50, 80, 109);
   $spotify-color:     rgb(129,183,26);
+
+
+  // Screen widths:
+  $break-point: 40.063em;
+  $small-screen:      $break-point;
+  $large-screen:      64.063em;
