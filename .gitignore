@@ -4,7 +4,7 @@
 *.sublime-project
 *.sublime-workspace
 *.psd
-/.sass-cache
+.sass-cache
 
 *.scssc
 
