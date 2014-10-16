@@ -1,0 +1,10 @@
+
+.work-item {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eee;
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}

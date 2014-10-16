@@ -4010,12 +4010,6 @@ figure {
   margin: 0em 3em;
 }
 
-.work-item {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #eee;
-}
-
 ::-moz-selection {
   background: #f8c400;
   color: black;
@@ -4027,13 +4021,13 @@ figure {
 }
 
 body {
-  font-size: 12px;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   font-weight: 200;
 }
 @media only screen and (min-width: 40.063em) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -4041,6 +4035,8 @@ h1 {
   font-weight: 800;
   margin: 0;
   padding: 0;
+  font-size: 2.57em;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -4206,6 +4202,9 @@ p.promo {
   top: 0;
   left: 0;
   z-index: 7000;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .logo {
@@ -4213,8 +4212,6 @@ p.promo {
   font-size: 2em;
   line-height: 2em;
   color: #f8c400;
-  margin-top: 1em;
-  margin-left: 1em;
   float: left;
   z-index: 1100;
   position: relative;
@@ -4227,17 +4224,15 @@ p.promo {
 }
 
 .toggle-navigation {
-  padding-bottom: 10px;
   cursor: pointer;
   float: right;
-  margin-top: 10px;
-  margin-right: 20px;
   z-index: 1100;
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  padding-bottom: 15px;
 }
 
 .hamburger {
@@ -4338,7 +4333,6 @@ p.promo {
   background-repeat: no-repeat;
   background-position: center center;
   color: white;
-  font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
 }
 @media (min-width: 740px) {
   .banner {
@@ -4347,13 +4341,14 @@ p.promo {
 }
 .banner div {
   text-align: center;
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18%;
+  max-width: 70em;
+  padding: 2em;
+  padding-top: 16%;
 }
 .banner p.lead {
-  font-weight: 800;
+  font-weight: 200;
   font-size: 2.0em;
 }
 

@@ -6,6 +6,9 @@
   left: 0;
   z-index: 7000;
   //background: rgba(0,0,0,0.2);
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .logo {
@@ -13,8 +16,6 @@
   font-size: 2em;
   line-height: 2em;
   color: $nav-color;
-  margin-top: 1em;
-  margin-left: 1em;
 
   float: left;
   z-index: 1100;
@@ -27,15 +28,12 @@
 }
 
 .toggle-navigation {
-  padding-bottom: 10px;
   cursor: pointer;
-
   float: right;
-  margin-top: 10px;
-  margin-right:20px;
   z-index: 1100;
   position: relative;
   user-select:none;
+  padding-bottom: 15px;
 }
 
 

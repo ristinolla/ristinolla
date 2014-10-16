@@ -12,21 +12,20 @@
     background-image: url('../img/nz_colorfull.jpg');
   }
 
-
   color: white;
-  font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
-
 
   div {
     text-align: center;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 18%;
+
+    max-width: 70em;
+    padding: 2em;
+    padding-top: 16%;
   }
 
   p.lead {
-    font-weight: $bold;
+    font-weight: $narrow;
     font-size: 2.0em;
   }
 }
