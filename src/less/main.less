@@ -11,8 +11,9 @@ Main less file
   .text-hide();
 }
 
-*{
-  box-sizing: border-box;
+::selection {
+  background: @brand;
+  color: black;
 }
 
 html { height: 100%; margin: 0; padding: 0; }
@@ -23,7 +24,18 @@ body {
   height: 100%;
   background: #9f9f9a;
 
+<<<<<<< HEAD
 
+=======
+  background-image: url('../img/lumisade_1000h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width : 740px )  {
+    background-image: url('../img/lumisade.jpg');
+  }
+>>>>>>> master
 
 
   color: white;

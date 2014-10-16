@@ -11,8 +11,9 @@ Variables
   background-color: transparent;
   border: 0;
 }
-* {
-  box-sizing: border-box;
+::selection {
+  background: #fcff00;
+  color: black;
 }
 html {
   height: 100%;
@@ -23,11 +24,27 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+<<<<<<< HEAD
   background: #9f9f9a;
+=======
+  background: #555;
+  background-image: url('../img/lumisade_1000h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+>>>>>>> master
   color: white;
   font-family: "proxima-nova", "Helvetica Neue", "Arial", sans-serif;
   font-size: 1.2em;
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 740px) {
+  body {
+    background-image: url('../img/lumisade.jpg');
+  }
+}
+>>>>>>> master
 @media (min-width: 600px) {
   body {
     font-size: 2.5em;
