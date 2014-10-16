@@ -1,16 +1,13 @@
 .banner {
   margin: 0; padding: 0;
   width: 100%;
+  padding-bottom: 15%;
   background: #555;
 
-  background-image: url('../img/lumisade_1000h.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-  @media (min-width : 740px )  {
-    background-image: url('../img/nz_colorfull.jpg');
-  }
+  background-image: url('../img/nz_colorfull.jpg');
 
   color: white;
 
@@ -21,11 +18,16 @@
 
     max-width: 70em;
     padding: 2em;
-    padding-top: 16%;
+    padding-top: 15%;
   }
 
+  h1 {
+    font-size: 1.8em;
+
+  }
   p.lead {
     font-weight: $narrow;
-    font-size: 2.0em;
+    font-size: 1.4em;
+
   }
 }

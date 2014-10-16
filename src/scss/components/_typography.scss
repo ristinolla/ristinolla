@@ -8,7 +8,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   @media only screen and ( min-width: $break-point ) {
     font-size: 16px;
   }
@@ -16,16 +16,18 @@ body {
   font-weight: $narrow;
 }
 
+
+
 h1 {
   font-weight: $bold;
   margin: 0;
   padding: 0;
-  font-size: 2.57em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
 
 h3 {
-  font-size: 2.57em;
+  font-size: 2em;
   font-weight: $bold;
   margin-top: 0;
   padding-top: 0;
@@ -36,8 +38,12 @@ h3 {
 
 p {
   font-weight: $narrow;
-  font-size: 1.125em;
+  font-size: 1.5em;
   margin: 0;
+
+  @media only screen and ( min-width: $break-point ) {
+    font-size: 1.125em;
+  }
 }
 
 main {
@@ -63,7 +69,7 @@ a {
 .section-header {
   text-transform: uppercase;
   font-size: 2.5em;
-  letter-spacing: 1em;
+  letter-spacing: 0.25em;
   text-align: center;
   margin-bottom: 1.5em;
 }
@@ -96,8 +102,7 @@ li {
 .content p {
   line-height: 1.4em;
   margin-bottom: 1em;
-  text-align: justify;
-  text-align: justify-content;
+
 }
 .content a {
   font-weight: $bold;
@@ -108,6 +113,10 @@ li {
   .dark &,
   .dark &:visited {
     color: $text-on-dark;
+  }
+
+  &:hover {
+    color: $brand;
   }
 }
 

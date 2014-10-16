@@ -41,21 +41,23 @@
 // ---
 // ---
 .hamburger {
-  width: 24px;
-  height: 4px;
-  margin-top: 20px;
+  margin-top: 1.2em;
   transition: all  0.3s ;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 1px;
+
+  &, &:before, &:after {
+    width: 2.7em;
+    height: 0.4em;
+    border-radius: 2px;
+  }
+
+
   &:before, &:after {
     content: '';
     display: block;
-    width: 24px;
-    height: 4px;
     background-color: $nav-color;
     position: absolute;
-    border-radius: 1px;
     z-index: -1;
     transition: all  0.3s;
   }
@@ -76,12 +78,12 @@
   .nav-closed & {
     background-color: $nav-color;
      &:before {
-       top: -8px;
+       top: -0.8em;
        background-color: $nav-color;
        transform: rotate(0deg);
      }
      &:after {
-       top: 8px;
+       top: 0.8em;
        background-color: $nav-color;
        transform: rotate(0deg);
      }
@@ -116,9 +118,4 @@
     transform: translate(0,-127%);
 
   }
-}
-
-
-.big-nav .icon {
-  width: 2em;
 }

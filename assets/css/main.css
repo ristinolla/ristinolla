@@ -4008,6 +4008,17 @@ Variables
 
 figure {
   margin: 0em 3em;
+  width: 33%;
+}
+
+.work-item {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+.work-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 ::-moz-selection {
@@ -4021,7 +4032,7 @@ figure {
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
   font-weight: 200;
 }
@@ -4035,12 +4046,12 @@ h1 {
   font-weight: 800;
   margin: 0;
   padding: 0;
-  font-size: 2.57em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
 
 h3 {
-  font-size: 2.57em;
+  font-size: 2em;
   font-weight: 800;
   margin-top: 0;
   padding-top: 0;
@@ -4049,8 +4060,13 @@ h3 {
 
 p {
   font-weight: 200;
-  font-size: 1.125em;
+  font-size: 1.5em;
   margin: 0;
+}
+@media only screen and (min-width: 40.063em) {
+  p {
+    font-size: 1.125em;
+  }
 }
 
 main {
@@ -4074,7 +4090,7 @@ a:hover {
 .section-header {
   text-transform: uppercase;
   font-size: 2.5em;
-  letter-spacing: 1em;
+  letter-spacing: 0.25em;
   text-align: center;
   margin-bottom: 1.5em;
 }
@@ -4124,8 +4140,6 @@ li.photo {
 .content p {
   line-height: 1.4em;
   margin-bottom: 1em;
-  text-align: justify;
-  text-align: justify-content;
 }
 
 .content a {
@@ -4136,6 +4150,9 @@ li.photo {
 }
 .dark .content a, .dark .content a:visited {
   color: white;
+}
+.content a:hover {
+  color: #f8c400;
 }
 
 .caption {
@@ -4152,10 +4169,15 @@ p.promo {
 }
 
 .list-icons li {
-  margin-right: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 .list-icons li a {
-  font-size: 2.4em;
+  font-size: 2em;
+}
+
+.icon:hover {
+  color: #f8c400;
 }
 
 .icon-github:hover {
@@ -4236,23 +4258,22 @@ p.promo {
 }
 
 .hamburger {
-  width: 24px;
-  height: 4px;
-  margin-top: 20px;
+  margin-top: 1.2em;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 1px;
+}
+.hamburger, .hamburger:before, .hamburger:after {
+  width: 2.7em;
+  height: 0.4em;
+  border-radius: 2px;
 }
 .hamburger:before, .hamburger:after {
   content: '';
   display: block;
-  width: 24px;
-  height: 4px;
   background-color: #f8c400;
   position: absolute;
-  border-radius: 1px;
   z-index: -1;
   -webkit-transition: all  0.3s;
           transition: all  0.3s;
@@ -4275,14 +4296,14 @@ p.promo {
   background-color: #f8c400;
 }
 .nav-closed .hamburger:before {
-  top: -8px;
+  top: -0.8em;
   background-color: #f8c400;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 .nav-closed .hamburger:after {
-  top: 8px;
+  top: 0.8em;
   background-color: #f8c400;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -4319,25 +4340,17 @@ p.promo {
           transform: translate(0, -127%);
 }
 
-.big-nav .icon {
-  width: 2em;
-}
-
 .banner {
   margin: 0;
   padding: 0;
   width: 100%;
+  padding-bottom: 15%;
   background: #555;
-  background-image: url("../img/lumisade_1000h.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-image: url("../img/nz_colorfull.jpg");
   color: white;
-}
-@media (min-width: 740px) {
-  .banner {
-    background-image: url("../img/nz_colorfull.jpg");
-  }
 }
 .banner div {
   text-align: center;
@@ -4345,11 +4358,14 @@ p.promo {
   margin-right: auto;
   max-width: 70em;
   padding: 2em;
-  padding-top: 16%;
+  padding-top: 15%;
+}
+.banner h1 {
+  font-size: 1.8em;
 }
 .banner p.lead {
   font-weight: 200;
-  font-size: 2.0em;
+  font-size: 1.4em;
 }
 
 .skill-header {
@@ -4359,76 +4375,88 @@ p.promo {
   display: inline-block;
   width: 100%;
   position: relative;
-  margin-bottom: 1.4em;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  font-size: 2em;
-  line-height: 2em;
-  /*&:hover:after {
-    width:0;
-    height: 0;
-    margin-left: 0;
-    top: 50%;
-    transition: all 0.4s;
-  }*/
-}
-.skill-header:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-radius: 100%;
-  z-index: 1100;
-  width: 8em;
-  height: 8em;
-  margin-left: -4em;
-}
-.code .skill-header:before {
-  background-color: #f8c400;
-}
-.design .skill-header:before {
-  background-color: #ed5825;
-}
-.photo .skill-header:before {
-  background-color: #34bbca;
-}
-.skill-header:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  border-radius: 100%;
-  background-color: #212324;
-  z-index: 1200;
-  width: 7em;
-  height: 7em;
-  margin-left: -3.5em;
-  top: 0.5em;
 }
 .skill-header h4 {
+  font-size: 2em;
+  line-height: 2em;
   position: relative;
   z-index: 1300;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.5em;
-  margin-right: -0.5em;
+  letter-spacing: 0.3em;
+  margin-right: -0.3em;
+  margin-bottom: 0;
 }
 
+.code h4 {
+  color: #f8c400;
+}
+
+.design h4 {
+  color: #ed5825;
+}
+
+.photo h4 {
+  color: #34bbca;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .skill-header {
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+    margin-bottom: 1.4em;
+  }
+  .skill-header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 100%;
+    z-index: 1100;
+    width: 12em;
+    height: 12em;
+    margin-left: -6em;
+  }
+  .skill-header h4 {
+    font-size: 1.6em;
+    color: white;
+  }
+  .code .skill-header:before {
+    background-color: #f8c400;
+  }
+  .design .skill-header:before {
+    background-color: #ed5825;
+  }
+  .photo .skill-header:before {
+    background-color: #34bbca;
+  }
+  .skill-header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    border-radius: 100%;
+    background-color: #212324;
+    z-index: 1200;
+    width: 10em;
+    height: 10em;
+    margin-left: -5em;
+    top: 1em;
+  }
+}
 .skill-text {
-  max-height: 1px;
-  width: 300%;
-  margin-left: -100%;
   overflow: hidden;
+  max-height: inherit;
+  width: 100%;
+  margin-left: 0;
 }
 .skill-text a {
   font-weight: 800;
 }
 @media only screen and (min-width: 40.063em) {
   .skill-text {
-    max-height: inherit;
-    width: 100%;
-    margin-left: 0;
+    margin-bottom: 2em;
   }
 }
 
@@ -4454,7 +4482,13 @@ footer p {
   margin: 0;
   padding: 0;
 }
+footer p a {
+  color: white;
+}
 footer p a:hover {
   color: #f8c400;
   text-decoration: none;
+}
+footer p:hover .icon-heart {
+  color: #ed2525;
 }

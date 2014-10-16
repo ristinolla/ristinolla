@@ -62,6 +62,15 @@ gulp.task('images',['clean-images'], function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+// Modernizer
+gulp.task('modernizr', function(){
+  return gulp.src('bower_components/modernizr/modernizr.js')
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/vendor'))
+    .pipe(notify({ message: 'Modernizer moved '}));
+});
+
 
 
 // Clean
@@ -75,7 +84,7 @@ gulp.task('clean-images', function(cb) {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'jade');
+    gulp.start('styles', 'scripts', 'jade', 'modernizr');
 });
 
 // Watch

@@ -2,8 +2,8 @@
 Main less file
 **/
 
-@import 'vendor/_normalize';
-@import 'vendor/_foundation';
+@import 'vendor/normalize/_normalize';
+@import 'vendor/foundation/_foundation';
 //@import "../../bower_components/foundation/scss/foundation/components/grid";
 @import '_variables';
 @import '_mixins';
@@ -13,7 +13,7 @@ Main less file
 
 @import 'components/_z-index';
 @import 'components/_utils';
-@import 'components/_global';
+@import 'components/_layout';
 
 @import 'components/_typography';
 @import 'components/_icons';

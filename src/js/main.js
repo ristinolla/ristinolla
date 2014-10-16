@@ -11,7 +11,9 @@ $('html').removeClass('no-js');
   });
 
 
-  $('.banner').css('min-height', window.innerHeight);
-  $('.big-nav').css('min-height', window.innerHeight);
+  //$('.banner').css('min-height', window.innerHeight - 100);
+  $('.big-nav').css('min-height', window.innerHeight - 100);
+
+
 
 });
