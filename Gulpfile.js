@@ -91,7 +91,7 @@ gulp.task('watch', function() {
   gulp.watch('src/**/*.jade', ['jade']);
 
   // Watch image files
-  //gulp.watch('src/images/**/*', ['images']);
+  gulp.watch('src/images/**/*', ['images']);
 
   // Create LiveReload server
   livereload.listen();
