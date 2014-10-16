@@ -1,20 +1,21 @@
 include variables
 
-nav.navigation.nav-closed
+nav#navigation.navigation.nav-closed
   //a.logo(href="/") RistinollaCreative
   button.button-clear.toggle-navigation.collapsed(type='button', data-target='#navigation')
     span.sr-only Toggle navigation
     .hamburger
-  div#navigation.big-nav
+  div.big-nav
     ul.list-unstyled
       li
         a(href="#skills") Skills
       li
         a(href="#about") About
       li
-        a(href="#contact") Contact
-      li
         a(href="#work") Selected Work
+      li
+        a(href="mailto:hello@pertturistimella.com") Contact&nbsp;
+          i.icon.icon-envelope.icon-1x
       li
         a(href="http://blog.pertturistimella.com/") Blog
     ul.list-inline.list-icons

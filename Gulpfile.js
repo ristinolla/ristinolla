@@ -1,5 +1,3 @@
-
-
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     less = require('gulp-less');
@@ -30,10 +28,13 @@ gulp.task('styles', function () {
 
 //Scripts
 gulp.task('scripts', function () {
-  return gulp.src('src/js/**/*.js')
-    //.pipe(jshint('.jshintrc'))
+  return gulp.src([
+      'bower_components/fastclick/lib/fastclick.js',
+      'src/js/**/*.js'
+    ])
+    .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
-    .pipe(concat('main.js'))
+    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('assets/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
@@ -87,19 +88,17 @@ gulp.task('default', ['clean'], function() {
     gulp.start('styles', 'scripts', 'jade', 'modernizr');
 });
 
+
+gulp.task('build', ['clean', 'clean-images'], function() {
+    gulp.start('styles', 'scripts', 'jade', 'modernizr', 'images');
+});
+
 // Watch
 gulp.task('watch', function() {
 
-  // Watch .scss files
   gulp.watch('src/scss/**/*.scss', ['styles']);
-
-  // Watch .js files
   gulp.watch('src/js/**/*.js', ['scripts']);
-
-  // Watch .jade files
   gulp.watch('src/**/*.jade', ['jade']);
-
-  // Watch image files
   gulp.watch('src/img/**/*', ['images']);
 
   // Create LiveReload server

@@ -4166,6 +4166,7 @@ li.photo {
 p.promo {
   padding-top: 2.5em;
   text-align: center;
+  font-weight: 800;
 }
 
 .list-icons li {
@@ -4174,10 +4175,6 @@ p.promo {
 }
 .list-icons li a {
   font-size: 2em;
-}
-
-.icon:hover {
-  color: #f8c400;
 }
 
 .icon-github:hover {
@@ -4342,9 +4339,9 @@ p.promo {
 
 .banner {
   margin: 0;
-  padding: 0;
   width: 100%;
-  padding-bottom: 15%;
+  padding-top: 30%;
+  padding-bottom: 25%;
   background: #555;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4352,13 +4349,18 @@ p.promo {
   background-image: url("../img/nz_colorfull.jpg");
   color: white;
 }
+@media only screen and (min-width: 40.063em) {
+  .banner {
+    padding-top: 16%;
+    padding-bottom: 15%;
+  }
+}
 .banner div {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 70em;
   padding: 2em;
-  padding-top: 15%;
 }
 .banner h1 {
   font-size: 1.8em;

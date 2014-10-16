@@ -1,0 +1,33 @@
+
+.block {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  overflow: hidden;
+}
+
+.dark {
+  background: $darkest-gray;
+  color: rgb(255,255,255);
+}
+
+.light {
+  background: rgb(255,255,255);
+  color: $dark-gray;
+}
+
+figure {
+  margin: 0em 3em;
+  width: 33%;
+}
+
+
+
+.work-item {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eee;
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
