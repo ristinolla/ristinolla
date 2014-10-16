@@ -1,0 +1,30 @@
+include variables
+
+nav#navigation.navigation.nav-closed
+  //a.logo(href="/") RistinollaCreative
+  button.button-clear.toggle-navigation.collapsed(type='button', data-target='#navigation')
+    span.sr-only Toggle navigation
+    .hamburger
+  div.big-nav
+    ul.list-unstyled
+      li
+        a(href="#skills") Skills
+      li
+        a(href="#about") About
+      li
+        a(href="#work") Selected Work
+      li
+        a(href="mailto:hello@pertturistimella.com") Contact&nbsp;
+          i.icon.icon-envelope.icon-1x
+      li
+        a(href="http://blog.pertturistimella.com/") Blog
+    ul.list-inline.list-icons
+      li
+        a(href="http://github.com/ristinolla/")
+          i.icon.icon-github
+      li
+        a(href="http://twitter.com/ristinolla")
+          i.icon.icon-twitter
+      li
+        a(href="http://blog.pertturistimella.com/")
+          i.icon.icon-tumblr
