@@ -4,8 +4,6 @@
 *.sublime-project
 *.sublime-workspace
 *.psd
-.sass-cache
 
-*.scssc
-
-*.scssc
+.*
+!/.gitignore
