@@ -1,0 +1,37 @@
+.banner {
+  margin: 0;
+  width: 100%;
+  padding-top: 30%;
+  padding-bottom: 25%;
+  @media only screen and ( min-width: $break-point ) {
+    padding-top: 16%;
+    padding-bottom: 15%;
+  }
+
+  background: #555;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/nz_colorfull.jpg');
+
+  color: white;
+
+  div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70em;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+
+  }
+  p.lead {
+    font-weight: $narrow;
+    font-size: 1.4em;
+
+  }
+}

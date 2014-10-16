@@ -1,0 +1,26 @@
+/**
+Main less file
+**/
+
+@import 'vendor/normalize/_normalize';
+@import 'vendor/foundation/_foundation';
+//@import "../../bower_components/foundation/scss/foundation/components/grid";
+@import '_variables';
+@import '_mixins';
+
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+
+@import 'components/_z-index';
+@import 'components/_utils';
+@import 'components/_layout';
+
+@import 'components/_typography';
+@import 'components/_icons';
+@import 'components/_buttons';
+
+@import 'sections/_navigation';
+@import 'sections/_banner';
+@import 'sections/_skills';
+@import 'sections/_carousel';
+@import 'sections/_footer';

@@ -1,0 +1,17 @@
+footer p {
+  text-align: center;
+  //color: $dark-on-dark;
+  font-size: 0.857em;
+  margin: 0;
+  padding: 0;
+  a {
+    color: rgb(255,255,255);
+    &:hover {
+      color: $brand;
+      text-decoration: none;
+    }
+  }
+  &:hover .icon-heart {
+    color: rgb(237,37,37);
+  }
+}

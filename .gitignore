@@ -4,3 +4,10 @@
 *.sublime-project
 *.sublime-workspace
 *.psd
+
+.*
+!/.gitignore
+
+*.scssc
+
+.sass-cache/a3b1d4f6affa7da4eca9caa8b9e0e8dd8863f7ae/main.scssc
