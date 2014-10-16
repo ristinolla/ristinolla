@@ -8,6 +8,9 @@ Main less file
 @import '_variables';
 @import '_mixins';
 
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+
 @import 'components/_z-index';
 @import 'components/_utils';
 @import 'components/_global';
