@@ -4253,6 +4253,42 @@ p.promo {
           user-select: none;
   padding-bottom: 15px;
 }
+.toggle-navigation span {
+  display: inline-block;
+  float: left;
+  margin-right: 0.75em;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  line-height: 1.2;
+  -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 1.5em;
+}
+.toggle-navigation .open {
+  color: #f8c400;
+  -webkit-transform: translate(0, -8em);
+      -ms-transform: translate(0, -8em);
+          transform: translate(0, -8em);
+}
+.toggle-navigation .closed {
+  display: inline-block;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.nav-closed .toggle-navigation .open {
+  display: inline-block;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.nav-closed .toggle-navigation .close {
+  -webkit-transform: translate(0, -8em);
+      -ms-transform: translate(0, -8em);
+          transform: translate(0, -8em);
+}
 
 .hamburger {
   margin-top: 1.2em;
@@ -4260,6 +4296,7 @@ p.promo {
           transition: all 0.3s;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
+  float: left;
 }
 .hamburger, .hamburger:before, .hamburger:after {
   width: 2.7em;

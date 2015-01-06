@@ -34,6 +34,35 @@
   position: relative;
   user-select:none;
   padding-bottom: 15px;
+  span {
+    display: inline-block;
+    float: left;
+    margin-right: 0.75em;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    line-height: 1.2;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 1.5em;
+  }
+
+  .open {
+      color: $nav-color;
+      transform: translate(0, -8em);
+  }
+  .closed {
+      display: inline-block;
+      transform: translate(0, 0);
+  }
+
+  .nav-closed & .open {
+      display: inline-block;
+      transform: translate(0, 0);
+  }
+  .nav-closed & .close {
+      transform: translate(0, -8em);
+  }
 }
 
 
@@ -45,6 +74,7 @@
   transition: all  0.3s ;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
+  float: left;
 
   &, &:before, &:after {
     width: 2.7em;
