@@ -140,7 +140,7 @@
   font-weight: $bold;
 
   opacity: 1;
-  transition: all 0.5s, opacity 0.2s;
+  transition: all 0.5s, opacity 0.2 s;
 
   transform: translate(0,0);
   .nav-closed & {

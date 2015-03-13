@@ -1,55 +1,55 @@
-/**
-Variables
-**/
+//
+// Variables
+//
 
-  $yellow:        rgb(248, 196, 0);
-  $orange:        rgb(237, 88, 37);
-  $blue:          rgb(52, 187, 202);
-  $darkest-gray:  rgb(33, 35, 36); //background and stuff
-  $dark-gray:     rgb(69, 72,74); // dark text
-  $light-gray:    rgb(198, 204, 205); //light text on light
-
-
-  $brand: $yellow;
+$yellow:        rgb(248, 196, 0);
+$orange:        rgb(237, 88, 37);
+$blue:          rgb(52, 187, 202);
+$darkest-gray:  rgb(33, 35, 36); //background and stuff
+$dark-gray:     rgb(69, 72,74); // dark text
+$light-gray:    rgb(198, 204, 205); //light text on light
 
 
-
-  $nav-color: $yellow;
-  $nav-background:   $yellow;
-
-  $dark-bg: $darkest-gray;
+$brand: $yellow;
 
 
-  // FONTS
-  $narrow: 200;
-  $bold: 800;
 
-  $text-color:      $dark-gray;
-  $text-on-dark:    rgb(255,255,255);
-  $dark-on-dark:    $dark-gray;
-  $light-on-light:  $light-gray;
+$nav-color: $yellow;
+$nav-background:   $yellow;
+
+$dark-bg: $darkest-gray;
 
 
-  //Font awesome
-  //$fa-font-path:        "../fonts" !default;
-  $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts"; // for referencing Bootstrap CDN font files directly
-  $fa-css-prefix:       icon !default;
-  $fa-version:          "4.2.0" !default;
-  $fa-border-color:     #eee !default;
-  $fa-inverse:          #fff !default;
-  $fa-li-width:         (30em / 14) !default;
+// FONTS
+$narrow: 400;
+$bold: 700;
 
-  // Social media colors
-  $github-color:      rgb(65, 131, 196);
-  $twitter-color:     rgb(0, 172, 237);
-  $linkedin-color:    rgb(0, 123, 182);
-  $instagram-color:   rgb(81, 127, 164);
-  $flickr-color:      rgb(255, 0, 132);
-  $tumblr-color:      rgb(50, 80, 109);
-  $spotify-color:     rgb(129,183,26);
+$text-color:      $dark-gray;
+$text-on-dark:    rgb(255,255,255);
+$dark-on-dark:    $dark-gray;
+$light-on-light:  $light-gray;
 
 
-  // Screen widths:
-  $break-point: 40.063em;
-  $small-screen:      $break-point;
-  $large-screen:      64.063em;
+//Font awesome
+//$fa-font-path:      "../fonts" !default;
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts"; // for referencing Bootstrap CDN font files directly
+$fa-css-prefix:       icon !default;
+$fa-version:          "4.2.0" !default;
+$fa-border-color:     #eee !default;
+$fa-inverse:          #fff !default;
+$fa-li-width:         (30em / 14) !default;
+
+// Social media colors
+$github-color:      rgb(65, 131, 196);
+$twitter-color:     rgb(0, 172, 237);
+$linkedin-color:    rgb(0, 123, 182);
+$instagram-color:   rgb(81, 127, 164);
+$flickr-color:      rgb(255, 0, 132);
+$tumblr-color:      rgb(50, 80, 109);
+$spotify-color:     rgb(129,183,26);
+
+
+// Screen widths:
+$break-point: 			40.063em;
+$small-screen:      $break-point;
+$large-screen:      64.063em;

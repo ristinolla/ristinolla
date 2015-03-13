@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    less = require('gulp-less');
+    scsslint = require('gulp-scss-lint'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -12,15 +12,26 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     jade = require('gulp-jade'),
-    del = require('del');
+    del = require('del'),
+    connect = require('gulp-connect'),
+    plumber = require('gulp-plumber'),
+    filter = require('gulp-filter');
 
 gulp.task('styles', function () {
-  return gulp.src('src/scss/main.scss')
+  var scssFilter = filter('src/vendor/**/*.scss');
+
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(scssFilter)
+    .pipe(plumber())
+    //.pipe(cache('scsslint'))
+    .pipe(scsslint())
+    .pipe(scssFilter.restore())
     .pipe(sass({ style: 'expanded', }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('assets/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
+    .pipe(plumber.stop())
     .pipe(gulp.dest('assets/css'))
     .pipe(notify({ message: 'Styles Complete'}));
 });
@@ -72,6 +83,13 @@ gulp.task('modernizr', function(){
     .pipe(notify({ message: 'Modernizer moved '}));
 });
 
+gulp.task('webserver', function() {
+    connect.server({
+        port: 8102,
+        livereload: true
+    });
+});
+
 
 
 // Clean
@@ -102,8 +120,7 @@ gulp.task('watch', function() {
   gulp.watch('src/img/**/*', ['images']);
 
   // Create LiveReload server
-  livereload.listen();
-
+  gulp.start('webserver');
   // Watch any files in dist/, reload on change
   gulp.watch(['assets/**', 'index.html']).on('change', livereload.changed);
 

@@ -8,6 +8,7 @@
 }
 
 body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica,Arial, sans-serif;
   font-size: 12px;
   @media only screen and ( min-width: $break-point ) {
     font-size: 16px;
@@ -40,7 +41,7 @@ p {
   font-weight: $narrow;
   font-size: 1.5em;
   margin: 0;
-
+  
   @media only screen and ( min-width: $break-point ) {
     font-size: 1.125em;
   }

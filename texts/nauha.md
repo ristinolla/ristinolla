@@ -17,4 +17,3 @@ Graphic Design by <a href="http://minnaviitalahde.wordpress.com/" target="_blank
 <a href="http://www.konseptitoimistonauha.fi" target="_blank">www.konseptitoimistonauha.fi</a>
 
 ![Image](assets/img/works/nauha-desktop.jpg)
-
