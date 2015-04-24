@@ -3984,7 +3984,7 @@ select {
 }
 
 .block {
-  padding: 3em 2em;
+  padding: 2em 2em;
 }
 
 .dark {
@@ -4361,8 +4361,8 @@ p.promo {
   font-size: 2em;
   font-weight: 700;
   opacity: 1;
-  -webkit-transition: all 0.5s, opacity 0.2 s;
-          transition: all 0.5s, opacity 0.2 s;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+          transition: transform 0.5s ease-in-out;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -4533,4 +4533,9 @@ footer p a:hover {
 }
 footer p:hover .icon-heart {
   color: #ed2525;
+}
+
+footer .social {
+  margin-bottom: 1em;
+  margin-top: 0;
 }
