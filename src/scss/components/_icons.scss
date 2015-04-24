@@ -1,9 +1,14 @@
 .list-icons li {
   margin-right: 0.5em;
-margin-left: 0.5em;
+  margin-left: 0.5em;
   a {
     font-size: 2em;
+    color: $text-on-dark;
   }
+}
+
+.list-inline.social {
+  text-align: center;
 }
 //.icon:hover {color: $brand;}
 .icon-github:hover  { color: $github-color    }

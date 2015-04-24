@@ -41,7 +41,7 @@ p {
   font-weight: $narrow;
   font-size: 1.5em;
   margin: 0;
-  
+
   @media only screen and ( min-width: $break-point ) {
     font-size: 1.125em;
   }
@@ -101,20 +101,18 @@ li {
   z-index: $z-index-2--content;
 }
 .content p {
-  line-height: 1.4em;
+  line-height: 1.7;
   margin-bottom: 1em;
-
 }
+.content--max-width p {
+  max-width: 30em;
+}
+.content--centered p {
+  margin: 1em auto;
+}
+
 .content a {
   font-weight: $bold;
-  .light &,
-  .light &:visited {
-    color: $text-color;
-  }
-  .dark &,
-  .dark &:visited {
-    color: $text-on-dark;
-  }
 
   &:hover {
     color: $brand;

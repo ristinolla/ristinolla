@@ -1,8 +1,6 @@
 
 .block {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  overflow: hidden;
+  padding: 3em 2em;
 }
 
 .dark {
@@ -15,11 +13,14 @@
   color: $dark-gray;
 }
 
-figure {
-  margin: 0em 3em;
-  width: 33%;
+figure.avatar {
+  width: 8em;
+  height: 8em;
+  margin: 0 auto 2em;
+  img {
+    border-radius: 100%;
+  }
 }
-
 
 
 .work-item {

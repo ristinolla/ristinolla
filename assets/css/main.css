@@ -3984,9 +3984,7 @@ select {
 }
 
 .block {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  overflow: hidden;
+  padding: 3em 2em;
 }
 
 .dark {
@@ -3999,9 +3997,13 @@ select {
   color: #45484a;
 }
 
-figure {
-  margin: 0em 3em;
-  width: 33%;
+figure.avatar {
+  width: 8em;
+  height: 8em;
+  margin: 0 auto 2em;
+}
+figure.avatar img {
+  border-radius: 100%;
 }
 
 .work-item {
@@ -4132,18 +4134,20 @@ li.photo {
 }
 
 .content p {
-  line-height: 1.4em;
+  line-height: 1.7;
   margin-bottom: 1em;
+}
+
+.content--max-width p {
+  max-width: 30em;
+}
+
+.content--centered p {
+  margin: 1em auto;
 }
 
 .content a {
   font-weight: 700;
-}
-.light .content a, .light .content a:visited {
-  color: #45484a;
-}
-.dark .content a, .dark .content a:visited {
-  color: white;
 }
 .content a:hover {
   color: #f8c400;
@@ -4169,6 +4173,11 @@ p.promo {
 }
 .list-icons li a {
   font-size: 2em;
+  color: white;
+}
+
+.list-inline.social {
+  text-align: center;
 }
 
 .icon-github:hover {

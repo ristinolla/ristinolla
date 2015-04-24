@@ -1,33 +1,25 @@
 section#about.dark.block
-    .row
-      .small-12.columns
-        h2.section-header About 
-      .small-12.columns.content
-        h3 Perttu Ristimella
-        figure.pull-right
-          img(src="assets/img/profile.jpg")
-          <br>
-          a.caption.pull-right(href="https://www.flickr.com/photos/photovena/") Photo credit: Elisa Kaurala
-
-        include:md ../../texts/about.md
-        ul.list-inline.list-icons
-          li
-            a(href="http://github.com/ristinolla/")
-              i.icon.icon-github
-          li
-            a(href="http://fi.linkedin.com/in/pertturistimella/")
-              i.icon.icon-linkedin
-          li
-            a(href="http://twitter.com/ristinolla")
-              i.icon.icon-twitter
-          li
-            a(href="http://blog.pertturistimella.com/")
-              i.icon.icon-tumblr
-          li
-            a(href="https://www.flickr.com/photos/limpek/")
-              i.icon.icon-flickr
-
-    .row
-      .small-12.columns
-        p.promo
-          | If you  want to create amazing stuff with me, just send me an email to <a href="mailto:hello@pertturistimella.com">hello@pertturistimella.com</a> and I’ll get back to you!
+  .small-12.columns
+    h2.section-header About
+  include skills      
+  .row
+    .small-12.columns.content
+      include:md ../../texts/about.md
+  .row
+    .small-12.columns
+      ul.list-inline.list-icons.social
+        li
+          a(href="http://github.com/ristinolla/")
+            i.icon.icon-github
+        li
+          a(href="http://fi.linkedin.com/in/pertturistimella/")
+            i.icon.icon-linkedin
+        li
+          a(href="http://twitter.com/ristinolla")
+            i.icon.icon-twitter
+        li
+          a(href="http://blog.pertturistimella.com/")
+            i.icon.icon-tumblr
+        li
+          a(href="https://www.flickr.com/photos/limpek/")
+            i.icon.icon-flickr
