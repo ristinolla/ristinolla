@@ -190,7 +190,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -307,8 +306,7 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -332,7 +330,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -437,7 +434,6 @@ html, body {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1746,7 +1742,7 @@ select {
   }
 }
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
@@ -1754,7 +1750,7 @@ select {
 @font-face {
   font-family: 'FontAwesome';
   src: url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0");
-  src: url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff2?v=4.2.0") format("woff2"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1765,6 +1761,9 @@ select {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /* makes the font 33% larger relative to the icon container */
@@ -1839,6 +1838,11 @@ select {
 .icon-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
+}
+
+.icon-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
 }
 
 @-webkit-keyframes fa-spin {
@@ -2527,6 +2531,7 @@ select {
   content: "";
 }
 
+.icon-facebook-f:before,
 .icon-facebook:before {
   content: "";
 }
@@ -3381,7 +3386,8 @@ select {
   content: "";
 }
 
-.icon-gittip:before {
+.icon-gittip:before,
+.icon-gratipay:before {
   content: "";
 }
 
@@ -3730,6 +3736,7 @@ select {
   content: "";
 }
 
+.icon-genderless:before,
 .icon-circle-thin:before {
   content: "";
 }
@@ -3921,6 +3928,167 @@ select {
   content: "";
 }
 
+.icon-buysellads:before {
+  content: "";
+}
+
+.icon-connectdevelop:before {
+  content: "";
+}
+
+.icon-dashcube:before {
+  content: "";
+}
+
+.icon-forumbee:before {
+  content: "";
+}
+
+.icon-leanpub:before {
+  content: "";
+}
+
+.icon-sellsy:before {
+  content: "";
+}
+
+.icon-shirtsinbulk:before {
+  content: "";
+}
+
+.icon-simplybuilt:before {
+  content: "";
+}
+
+.icon-skyatlas:before {
+  content: "";
+}
+
+.icon-cart-plus:before {
+  content: "";
+}
+
+.icon-cart-arrow-down:before {
+  content: "";
+}
+
+.icon-diamond:before {
+  content: "";
+}
+
+.icon-ship:before {
+  content: "";
+}
+
+.icon-user-secret:before {
+  content: "";
+}
+
+.icon-motorcycle:before {
+  content: "";
+}
+
+.icon-street-view:before {
+  content: "";
+}
+
+.icon-heartbeat:before {
+  content: "";
+}
+
+.icon-venus:before {
+  content: "";
+}
+
+.icon-mars:before {
+  content: "";
+}
+
+.icon-mercury:before {
+  content: "";
+}
+
+.icon-transgender:before {
+  content: "";
+}
+
+.icon-transgender-alt:before {
+  content: "";
+}
+
+.icon-venus-double:before {
+  content: "";
+}
+
+.icon-mars-double:before {
+  content: "";
+}
+
+.icon-venus-mars:before {
+  content: "";
+}
+
+.icon-mars-stroke:before {
+  content: "";
+}
+
+.icon-mars-stroke-v:before {
+  content: "";
+}
+
+.icon-mars-stroke-h:before {
+  content: "";
+}
+
+.icon-neuter:before {
+  content: "";
+}
+
+.icon-facebook-official:before {
+  content: "";
+}
+
+.icon-pinterest-p:before {
+  content: "";
+}
+
+.icon-whatsapp:before {
+  content: "";
+}
+
+.icon-server:before {
+  content: "";
+}
+
+.icon-user-plus:before {
+  content: "";
+}
+
+.icon-user-times:before {
+  content: "";
+}
+
+.icon-hotel:before,
+.icon-bed:before {
+  content: "";
+}
+
+.icon-viacoin:before {
+  content: "";
+}
+
+.icon-train:before {
+  content: "";
+}
+
+.icon-subway:before {
+  content: "";
+}
+
+.icon-medium:before {
+  content: "";
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -3984,7 +4152,7 @@ select {
 }
 
 .block {
-  padding: 2em 2em;
+  padding: 3em 2em;
 }
 
 .dark {
@@ -4088,7 +4256,8 @@ a:hover {
   font-size: 2.5em;
   letter-spacing: 0.25em;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .divider {
@@ -4217,6 +4386,22 @@ p.promo {
   outline: none;
 }
 
+.button-rounded {
+  display: inline-block;
+  padding: 1em 2em;
+  border: 1px solid white;
+  border-radius: 100em;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgba(237, 237, 237, 0.05);
+  transition: all 400ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.button-rounded:hover {
+  color: white;
+  background-color: rgba(237, 237, 237, 0.2);
+}
+
 .navigation {
   width: 100%;
   height: 5em;
@@ -4237,8 +4422,7 @@ p.promo {
   float: left;
   z-index: 1100;
   position: relative;
-  -webkit-transition: color 0.3;
-          transition: color 0.3;
+  transition: color 0.3;
 }
 .logo:hover {
   text-decoration: none;
@@ -4264,8 +4448,7 @@ p.promo {
   font-size: 2em;
   color: white;
   line-height: 1.2;
-  -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   position: absolute;
   right: 1.5em;
 }
@@ -4295,8 +4478,7 @@ p.promo {
 
 .hamburger {
   margin-top: 1.2em;
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
   float: left;
@@ -4312,8 +4494,7 @@ p.promo {
   background-color: #f8c400;
   position: absolute;
   z-index: -1;
-  -webkit-transition: all  0.3s;
-          transition: all  0.3s;
+  transition: all  0.3s;
 }
 .hamburger:before {
   background-color: white;
@@ -4361,8 +4542,8 @@ p.promo {
   font-size: 2em;
   font-weight: 700;
   opacity: 1;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-          transition: transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -4402,12 +4583,37 @@ p.promo {
   max-width: 70em;
   padding: 2em;
 }
-.banner h1 {
+.banner .main-head {
   font-size: 1.8em;
+  line-height: 1.34;
 }
 .banner p.lead {
   font-weight: 400;
   font-size: 1.4em;
+}
+.banner .section-header,
+.banner .lead {
+  margin-bottom: 2rem;
+}
+
+.banner-photo {
+  background-image: url("../img/matamata-1294.jpg");
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.4);
+}
+@media only screen and (min-width: 1295px) {
+  .banner-photo {
+    background-image: url("../img/matamata-2000.jpg");
+  }
+}
+@media only screen and (min-width: 1295px) {
+  .banner-photo {
+    background-image: url("../img/matamata-2000.jpg");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .banner-photo {
+    background-image: url("../img/matamata-2000.jpg");
+  }
 }
 
 .skill-header {
@@ -4425,8 +4631,8 @@ p.promo {
   z-index: 1300;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.3em;
-  margin-right: -0.3em;
+  letter-spacing: 0.15em;
+  margin-right: -0.15em;
   margin-bottom: 0;
 }
 

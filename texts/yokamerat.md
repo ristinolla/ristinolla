@@ -1,10 +1,5 @@
 ### Yokamerat
 
-<ul class="list-inline list-divided list-categories">
-	<li class="code">Web Developing</li>
-	<li class="design">Web Design</li>
-</ul>
-
 **When:** 1/2014
 
 The newest edition of the site was my side project,

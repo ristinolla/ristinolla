@@ -1,10 +1,5 @@
 ### Koodiviidakko
 
-<ul class="list-inline list-divided list-categories">
-	<li class="code">Web Developing</li>
-	<li class="design">Web Design</li>
-</ul>
-
 **When:** 2012 - 2013
 
 **In short:** Lead front-end designer and developer in multiple projects.

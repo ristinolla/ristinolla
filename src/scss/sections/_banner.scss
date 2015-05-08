@@ -14,6 +14,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('../img/nz_colorfull.jpg');
+
   color: white;
 
   div {
@@ -24,13 +25,32 @@
     padding: 2em;
   }
 
-  h1 {
+  .main-head {
     font-size: 1.8em;
-
+    line-height: 1.34;
   }
   p.lead {
     font-weight: $narrow;
     font-size: 1.4em;
-
+    //margin-bottom: 3rem;
   }
+  .section-header,
+  .lead {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.banner-photo {
+  background-image: url('../img/matamata-1294.jpg');
+  @media only screen and ( min-width: 1295px ) {
+    background-image: url('../img/matamata-2000.jpg');
+  }
+  @media only screen and ( min-width: 1295px ) {
+    background-image: url('../img/matamata-2000.jpg');
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    background-image: url('../img/matamata-2000.jpg');
+  }
+  text-shadow: 0 0 2em rgba(0,0,0,0.4);
 }

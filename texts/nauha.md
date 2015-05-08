@@ -1,11 +1,5 @@
 ### Konseptitoimisto Nauha
 
-<ul class="list-inline list-divided list-categories">
-	<li class="code">Web Developing</li>
-	<li class="design">Web Design</li>
-	<li class="photo">Photography</li>
-</ul>
-
 **When:** 8/2014
 
 Konseptitoimisto Nauha is a brand new concept office, which was the first case I did as freelancer. The site was designed to be simple, yet informative and modern. Minna Viitalähde did branding and graphic design, which laid a solid foundation for me to design the website to match the brand image that she created.
