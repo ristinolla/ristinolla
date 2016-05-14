@@ -33,17 +33,17 @@ $(function() {
   $("body").on('click', '.smooth-scroll', scrollDown);
 
   var baseURI = window.location.host;
-  
+
 
   $("body").on("click", function(e) {
-  
+
     // abandon if link already aborted or analytics is not available
     if (e.isDefaultPrevented() || typeof ga !== "function") return;
-  
+
     // abandon if no active link or link within domain
     var link = $(e.target).closest("a");
     if (link.length !== 1 || baseURI === link[0].host) return;
-  
+
 
     e.preventDefault();
     var href = link[0].href;
@@ -62,6 +62,6 @@ $(function() {
     function loadPage() {
       document.location = href;
     }
-  
+
   });
 });

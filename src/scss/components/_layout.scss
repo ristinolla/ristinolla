@@ -3,6 +3,7 @@
   padding: 3em 2em;
 }
 
+
 .dark {
   background: $darkest-gray;
   color: rgb(255,255,255);
@@ -31,4 +32,24 @@ figure.avatar {
     border-bottom: none;
     margin-bottom: 0;
   }
+}
+
+
+/**
+  ONLY BLOCK LAYOUT
+**/
+
+.one-block-layout {
+  height: 100%;
+  height: 100vh;
+  background: $darkest-gray;
+  display: flex;
+}
+
+.the-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 50em;
+  margin: 0 auto;
 }

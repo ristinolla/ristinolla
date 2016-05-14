@@ -128,8 +128,7 @@
   top: 0;
   left: 0;
   padding-top: 10%;
-
-
+  
   background-color: $nav-background;
 
   text-align: center;
@@ -145,6 +144,5 @@
   .nav-closed & {
     opacity: 0;
     transform: translate(0,-127%);
-
   }
 }
