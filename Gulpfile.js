@@ -61,7 +61,8 @@ gulp.task('jade', function() {
   gulp.src('./src/index.jade')
     .pipe(plumber())
     .pipe(jade({
-      locals: YOUR_LOCALS
+      locals: YOUR_LOCALS,
+      pretty: true
     }))
     .pipe(plumber.stop())
     .pipe(gulp.dest('./'))
