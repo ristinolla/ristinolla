@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica,Arial, sans-serif;
-  font-size: 12px;
+  font-family: 'Heebo', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   @media only screen and ( min-width: $break-point ) {
     font-size: 16px;
   }
@@ -25,6 +25,7 @@ h1 {
   padding: 0;
   font-size: 2em;
   margin-bottom: 1em;
+  line-height: 1.2;
 }
 
 h3 {
@@ -39,11 +40,11 @@ h3 {
 
 p {
   font-weight: $narrow;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 0;
 
   @media only screen and ( min-width: $break-point ) {
-    font-size: 1.125em;
+    font-size: 1.5em;
   }
 }
 
